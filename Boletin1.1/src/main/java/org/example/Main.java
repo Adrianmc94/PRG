@@ -1,17 +1,30 @@
 package org.example;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    private static Object Peso;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public static void main(String[] args) {
+        Scanner sc;
+        int pesoPesado, peso1, peso2;
+        String nombre; peso, nome1,nome2;
+
+        sc = new Scanner(System.in);
+        System.out.println("Escribe o nome da persona 1: ");
+        nome1 = sc.next();
+        System.out.println("Escribe o peso da persoa 1:");
+        peso1 = sc.next();
+        sc = new Scanner(System.in);
+        System.out.println("Escribe o nome da persona 2: ");
+        nome2 = sc.next();
+        System.out.println("Escribe o peso da persoa 2:");
+        peso2 = sc.next();
+
+        if (peso1 > peso2) {
+            pesoPesado = peso1;
         }
     }
 }
