@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ejercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -29,4 +31,4 @@ public class ejercicio5 {
         return letras[indice];
     }
 }
-}
+

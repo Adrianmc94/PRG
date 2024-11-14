@@ -4,59 +4,44 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class ejercicio2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int opcion;
 
-        do {
 
-            System.out.println("Seleccione unha opción:");
-            System.out.println("1. Cadrado");
-            System.out.println("2. Triángulo");
-            System.out.println("3. Círculo");
-            System.out.println("4. Sair");
-            opcion = scanner.nextInt();
 
-            switch (opcion) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Elige la figura que necesites saber su area:  ");
+            System.out.println("1...Cuadrado");
+            System.out.println("2...Triangulo");
+            System.out.println("3...Circulo");
+            int valor = sc.nextInt();
+
+
+            switch (valor) {
                 case 1:
-
-                    System.out.print("Introduce a lonxitude do lado: ");
-                    double ladoCadrado = scanner.nextDouble();
-                    double areaCadrado = ladoCadrado * ladoCadrado;
-                    System.out.printf("Área do cadrado: %.2f unidades cadradas%n", areaCadrado);
-                    break;
-
+                    if (valor == 1){
+                        System.out.println("Dime cuanto mide el lado del cuadrado en cm: ");
+                        int lado = sc.nextInt();
+                        int operacionCU = lado * lado;
+                        System.out.println("El area del cuadrado es : " + operacionCU);
+                    }
                 case 2:
+                    if (valor == 2) {
+                        System.out.println("Dime la base del triangulo: ");
+                        int base = sc.nextInt();
+                        System.out.println("Dime la altura del triangulo: ");
+                        int altura = sc.nextInt();
 
-                    System.out.print("Introduce a base do triángulo: ");
-                    double baseTriangulo = scanner.nextDouble();
-                    System.out.print("Introduce a altura do triángulo: ");
-                    double alturaTriangulo = scanner.nextDouble();
-                    double areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-                    System.out.printf("Área do triángulo: %.2f unidades cadradas%n", areaTriangulo);
-                    break;
 
+                        int operacionTRI = base * altura / 2;
+                        System.out.println("El area del triangulo es: " + operacionTRI);
+                    }
                 case 3:
-
-                    System.out.print("Introduce o radio do círculo: ");
-                    double radioCirculo = scanner.nextDouble();
-                    double areaCirculo = Math.PI * radioCirculo * radioCirculo;
-                    System.out.printf("Área do círculo: %.2f unidades cadradas%n", areaCirculo);
-                    break;
-
-                case 4:
-
-                    System.out.println("Saíndo do programa...");
-                    break;
-
-                default:
-
-                    System.out.println("Opción incorrecta. Por favor, intente de novo.");
+                    if (valor == 3){
+                        System.out.println("Dime la medida del radio del circulo: ");
+                        int radio = sc.nextInt();
+                        int operacionCIR = (int) (Math.PI * Math.pow(radio, 2));
+                        System.out.println("El area del circulo es: " + operacionCIR);
+                    }
             }
 
-            System.out.println();
-
-        } while (opcion != 4);
-
-        scanner.close();
-    }
+        }
 }
