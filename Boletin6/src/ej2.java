@@ -6,6 +6,6 @@ public class ej2 {
         }
     }
     public static void main(String[] args) {
-        eco(5);
+        eco(10);
     }
 }

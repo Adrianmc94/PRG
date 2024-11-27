@@ -13,7 +13,7 @@ public class ej1 {
 
 
                 System.out.println("Array original:");
-                for (int numero : numeros) {
+                for (int numero  : numeros) {
                     System.out.print(numero + " ");
                 }
                 System.out.println();
