@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Introduce la nota de tu examen para ver si tienes un suspenso. bien, notable o sobresaliente.
- * @version1.1
+ * @version 1.1
  * @author Adrian Miguez
  */
 
