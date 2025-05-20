@@ -1,4 +1,5 @@
-package Boletin12;
+package Boletin12.ejer1;
+
 import java.io.*;
 import java.util.*;
 
