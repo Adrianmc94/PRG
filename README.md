@@ -1,1 +1,1 @@
-# El boletin 9 ejercicios estan en la rama master
+# El boletin 9 en adelante los ejercicios estan en la rama master
